@@ -5,7 +5,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'index.js',
-    assetModuleFilename: 'images/[name][ext]',
   },
   plugins: [
     new NodePolyfillPlugin(),
