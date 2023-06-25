@@ -1,0 +1,32 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "forever src/server.js",
+    "watch": "forever -w src/server.js",
+    "build": "webpack --mode production",
+    "deploy": "push-dir --dir=public --branch=gh-pages --force --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "push-dir": "^0.4.1",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "forever": "^4.0.3",
+    "koa": "^2.14.2",
+    "koa-body": "^6.0.1",
+    "koa-static": "^5.0.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.13.0"
+  }
+}
