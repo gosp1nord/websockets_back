@@ -2,11 +2,11 @@
   "name": "websockets",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "start": "forever server.js",
-    "watch": "forever -w server.js",
+    "start": "forever ./src/index.js",
+    "watch": "forever -w ./src/index.js",
     "build": "webpack --mode production",
     "deploy": "push-dir --dir=public --branch=gh-pages --force --verbose"
   },
