@@ -5,8 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "lint": "eslint .",
-    "start": "forever src/server.js",
-    "watch": "forever -w src/server.js",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
     "build": "webpack --mode production",
     "deploy": "push-dir --dir=public --branch=gh-pages --force --verbose"
   },

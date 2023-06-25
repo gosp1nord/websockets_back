@@ -18,7 +18,6 @@ const wsServer = new WS.Server({
   server
 });
 
-const chat = ['welcome to our chat'];
 const arrImgs = [
   'cat.png',
   'frog.png',
