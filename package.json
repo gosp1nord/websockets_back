@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "start": "forever ./src/index.js",
+    "start": "forever ./public/index.js",
     "watch": "forever -w ./src/index.js",
     "build": "webpack --mode production",
     "deploy": "push-dir --dir=public --branch=gh-pages --force --verbose"
